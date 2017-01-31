@@ -7,7 +7,7 @@ class Core
 {
     public function __construct($baseDir, $initAdmin = true)
     {
-        if (!is_file($baseDir) . '/app/Mage.php') {
+        if (!is_file($baseDir . '/app/Mage.php')) {
             throw new InvalidArgumentException('Not a valid Magento base directory: '.$baseDir);
         }
 
